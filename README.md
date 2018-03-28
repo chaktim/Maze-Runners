@@ -17,16 +17,16 @@
 
 ## English or pseudocode description of algorithm
 ### if end of path
-    ### if treasure
-    	### save path
-    ### else (remove path?)
-### else //recursive
-    ### for each path in an intersection
-    	### go down the path till intersection
-	### if path is legal
-	    ### invoke recursive abstraction via this method
-	### set current point to previous checkpoint/intersection?
-    ### return
+    if treasure
+    	save path
+    else (remove path?)
+###else //recursive
+    for each path in an intersection
+    	go down the path till intersection
+	if path is legal
+	    invoke recursive abstraction via this method
+	set current point to previous checkpoint/intersection?
+    return
 
 ## class(es), with fields and methods
 
