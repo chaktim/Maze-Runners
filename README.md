@@ -10,12 +10,23 @@
 ## recursive abstraction
 ### When I am asked to find a path(s) to treasure in a given maze,
 ### the recursive abstraction can determine if a path in an intersection leads
-### to the treasure while not crossing any precious paths.
+### to treasure while not crossing any precious paths.
 
 ## base case
-### When either the treasure has been found or the entire maze has been searched
+### End of path
 
 ## English or pseudocode description of algorithm
+### if end of path
+    ### if treasure
+    	### save path
+    ### else (remove path?)
+### else //recursive
+    ### for each path in an intersection
+    	### go down the path till intersection
+	### if path is legal
+	    ### invoke recursive abstraction via this method
+	### set current point to previous checkpoint/intersection?
+    ### return
 
 ## class(es), with fields and methods
 
