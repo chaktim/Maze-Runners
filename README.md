@@ -14,7 +14,7 @@
 ### to treasure while not crossing any previous paths.
 
 ## base case
-### End of path
+### End of path or treasure discovered
 
 ## English or pseudocode description of algorithm
 ### if end of path
