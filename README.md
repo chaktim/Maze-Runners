@@ -22,7 +22,7 @@
     else (remove path?)
 ### else //recursive
     for each path in an intersection
-    	go down the path till intersection
+    	go down the path until intersection
 	if path is legal
 	    invoke recursive abstraction via this method
 	set current point to previous checkpoint/intersection?
