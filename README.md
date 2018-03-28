@@ -4,8 +4,9 @@
 ### Bentley Dong & Chaktim Wong
 
 ## statement of problem
-### To determine the correct path/s to treasure in a given maze if
-### there are any.
+### Return the boolean value of the statement,
+### "There is at least one correct path in a given maze
+### to the treasure" and save that path.
 
 ## recursive abstraction
 ### When I am asked to find a path(s) to treasure in a given maze,
