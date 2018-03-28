@@ -10,7 +10,7 @@
 ## recursive abstraction
 ### When I am asked to find a path(s) to treasure in a given maze,
 ### the recursive abstraction can determine if a path in an intersection leads
-### to treasure while not crossing any precious paths.
+### to treasure while not crossing any previous paths.
 
 ## base case
 ### End of path
