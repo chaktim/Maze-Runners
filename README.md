@@ -20,7 +20,7 @@
     if treasure
     	save path
     else (remove path?)
-###else //recursive
+### else //recursive
     for each path in an intersection
     	go down the path till intersection
 	if path is legal
