@@ -94,6 +94,7 @@ public class Maze {
 
         maze = new int[rankCount][];
 
+	//this wouldn't work if the maze is not a rectangle - chaktim
         int fileCount = old.maze[0].length;
 
         for (int rank = 0; rank < rankCount; rank++) {
