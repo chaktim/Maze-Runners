@@ -10,29 +10,34 @@
 
 ## recursive abstraction
 ### When I am asked to find a path(s) to treasure in a given maze,
-### the recursive abstraction can determine a legal path
-### ahead that leads to treasure if there is any.
+### the recursive abstraction can check the next square and all the squares
+### after it for treasure if there is any.
 
 ## base case
-### No more paths to take or treasure has been found
+### Treasure has been found
 
 ## English or pseudocode description of algorithm
 
-### if no paths available
-       go back to snapshot
+### if treasure has been found (return true)
     else
-	if multiple paths ahead
-	   save snapshot
-	   set direction to an untaken path /*use a variable
-	   to remember which paths were taken?*/
-	   
-	move foward
-	if treasure?
-	   ~save/record
-	invoke recursive abstraction
-	if treasure found (undetermined)
-	else (no path to treasure on maze)
+	for loop, check adjacent squares one by one
+	   save snapshot, and drop wall at explorer location
+	   move explorer to adjacent square
+	   check for wall on current square
+	   if wall? backtrack (use snapshot)
+	   otherwise invoke recursive abstraction
+
+	   set maze to snapshot after all the recursive calls finish
+
+	once all paths checked, return false
 
 ## class(es), with fields and methods
 
 ## version*n* wish list
+### Multiple solutions
+### More efficient code (repeat less code, more versatile, etc.)
+### Clearer maze prints (terminal/cmd maze displays)
+###
+
+## known bugs
+### Does not work if explorer is set outside of maze
