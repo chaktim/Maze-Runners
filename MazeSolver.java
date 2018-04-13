@@ -44,6 +44,10 @@ public class MazeSolver {
 
 		//move foward
 		mazeToBeSolved.go(direction);
+
+		//TEST
+		// System.out.println(snapshot + "snapshot");
+		// System.out.println(mazeToBeSolved + "current" + direction);
 		
 		//if on wall, backtrack using snapshot
 		if(onWall()) {
@@ -52,6 +56,7 @@ public class MazeSolver {
 		}
 		//otherwise, continue on this path (recursive)
 		else if(solve()) return true;
+		else mazeToBeSolved = snapshot;
 	    }
 	}
 	return false;
