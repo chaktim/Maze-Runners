@@ -41,3 +41,4 @@
 
 ## known bugs
 ### Does not work if explorer is set outside of maze
+### Maze must be rectangular to work
