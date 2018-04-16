@@ -6,7 +6,7 @@
 ## statement of problem
 ### Determine the boolean value of the statement,
 ### "There is at least one correct path in a given maze
-### to the treasure."
+### to the treasure." If so, save that path.
 
 ## recursive abstraction
 ### When I am asked to find a path(s) to treasure in a given maze,
