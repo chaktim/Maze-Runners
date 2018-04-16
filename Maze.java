@@ -73,8 +73,8 @@ public class Maze {
                 else                          element = WALL;
                 maze[ rank][ file] = element;
             }
-        }
-        
+        }	    
+
         explorerPosition = new Vector().add( explorerRank, explorerFile);
         // // for debugging: report explorer's location
         // System.out.println( "explorer at " + explorerPosition.rank
@@ -85,7 +85,7 @@ public class Maze {
     /**
       Copy-construct an instance.
       Deep copy of all instance fields.
-     */
+    */
     public Maze( Maze old) {
 
         explorerPosition = new Vector( old.explorerPosition);
@@ -94,10 +94,8 @@ public class Maze {
 
         maze = new int[rankCount][];
 
-	//this wouldn't work if the maze is not a rectangle - chaktim
-        int fileCount = old.maze[0].length;
-
         for (int rank = 0; rank < rankCount; rank++) {
+            int fileCount = old.maze[rank].length;
             maze[rank] = new int[fileCount];
             for (int file = 0; file < fileCount; file++) {
                 maze[rank][file] = old.maze[rank][file];
@@ -238,4 +236,12 @@ public class Maze {
             return this.rank == rank && this.file == file;
         }
     }
+
+    public boolean onTreasure() {
+        return explorerIsOnA() == 0;
+    }
+    public boolean onWall() {
+        return explorerIsOnA() == 1;
+    } 
+
 }
