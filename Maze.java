@@ -94,9 +94,8 @@ public class Maze {
 
         maze = new int[rankCount][];
 
-        int fileCount = old.maze[0].length;
-
         for (int rank = 0; rank < rankCount; rank++) {
+            int fileCount = old.maze[rank].length;
             maze[rank] = new int[fileCount];
             for (int file = 0; file < fileCount; file++) {
                 maze[rank][file] = old.maze[rank][file];
