@@ -73,8 +73,8 @@ public class Maze {
                 else                          element = WALL;
                 maze[ rank][ file] = element;
             }
-        }
-        
+        }	    
+
         explorerPosition = new Vector().add( explorerRank, explorerFile);
         // // for debugging: report explorer's location
         // System.out.println( "explorer at " + explorerPosition.rank
@@ -85,7 +85,7 @@ public class Maze {
     /**
       Copy-construct an instance.
       Deep copy of all instance fields.
-     */
+    */
     public Maze( Maze old) {
 
         explorerPosition = new Vector( old.explorerPosition);
